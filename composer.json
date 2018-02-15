@@ -1,5 +1,5 @@
 {
-  "name": "bfunky/2ascii",
+  "name": "bfunky/ascii",
   "type": "library",
   "description": "A library to transliterate and check strings to ascii encoding",
   "keywords": [
