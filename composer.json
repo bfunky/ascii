@@ -1,0 +1,39 @@
+{
+  "name": "bfunky/2ascii",
+  "type": "library",
+  "description": "A library to transliterate and check strings to ascii encoding",
+  "keywords": [
+    "ascii",
+    "encode",
+    "transliterate",
+    "iconv alternative",
+    "url encode",
+    "link encode",
+    "remove accents",
+    "special chars"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jairo Rodríguez",
+      "email": "jairo@bfunky.net",
+      "homepage": "http://www.bfunky.net"
+    }
+  ],
+  "require": {
+    "php": ">=7.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "6.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "BFunky\\Ascii\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "BFunky\\Test\\Ascii\\": "test"
+    }
+  }
+}

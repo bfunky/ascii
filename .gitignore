@@ -1,0 +1,5 @@
+.idea
+/vendor
+# Ignore composer generated files
+composer.phar
+composer.lock
