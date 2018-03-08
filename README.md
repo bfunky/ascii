@@ -1,5 +1,5 @@
-# ascii
-A library to check strings and transliterate to ascii encoding
+# Ascii
+A library to validate strings and transliterate to ascii encoding
 
 ## Usage as static class
 
