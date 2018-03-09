@@ -1,5 +1,9 @@
 # Changes in Ascii 1.x.x
 
+## [1.0.5]
+- Updated documentation
+- Added CI tools
+
 ## [1.0.4]
 - Updated documentation
 

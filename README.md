@@ -19,12 +19,13 @@ $result = Ascii::isValid('cette chaîne est valide');
 echo Ascii::transliterate('cette chaîne est valide');
 ```
 
-## Usage creating ab instance
+## Usage creating an instance
 
 ### Validate if given value is a valid ascii string
 
 ```php
 $ascii = new Ascii();
+
 //returns true
 $result = $ascii->isValid('this string is valid');
 
