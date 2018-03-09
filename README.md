@@ -1,5 +1,4 @@
 # Ascii
-========
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/bfunky/ascii/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/bfunky/ascii/?branch=master)
 [![Build Status](https://scrutinizer-ci.com/g/bfunky/ascii/badges/build.png?b=master)](https://scrutinizer-ci.com/g/bfunky/ascii/build-status/master)
 [![Code Coverage](https://scrutinizer-ci.com/g/bfunky/ascii/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/bfunky/ascii/?branch=master)
