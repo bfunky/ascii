@@ -10,12 +10,15 @@ class Ascii
      */
     public static function isValid(string $stringToCheck): bool
     {
-        foreach (AsciiCorrelation::MAPPED_VALUES as $key => $value) {
-            if (strpos($stringToCheck, $key) !== false) {
-                return false;
-            }
-        }
-        return true;
+        return (!self::existsTransliterableChars($stringToCheck));
+    }
+
+    /**
+     * @return bool
+     */
+    private static function existsTransliterableChars(string $stringToCheck): bool
+    {
+        return !preg_match('@^[a-zA-Z0-9\s\p{P}\p{S}]+$@u', $stringToCheck);
     }
 
     /**
@@ -24,6 +27,10 @@ class Ascii
      */
     public static function transliterate(string $stringToTransliterate): string
     {
-        return strtr($stringToTransliterate, AsciiCorrelation::MAPPED_VALUES);
+        $transliterated = strtr($stringToTransliterate, AsciiCorrelation::MAPPED_VALUES);
+        if (self::isValid($transliterated)) {
+            return $transliterated;
+        }
+        throw new \Exception('Error on transliterate ' . $stringToTransliterate);
     }
 }
